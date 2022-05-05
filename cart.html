@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart Page</title>
-</head>
-<body>
+  </head>
+  <link rel="stylesheet" href="./styles/cart.css" />
+  <body>
     <div id="container">
-        
+      <!-- cart left side Div -->
+      <div id="your_cart">
+        <!-- cart Heading -->
+
+        <h3 id="cart_heading">Your Cart</h3>
+
+        <!-- Cart Item  -->
+        <div id="cart_item"></div>
+      </div>
+
+      <div id="summary">
+        <h3>Order Summary</h3>
+        <hr />
+        <div id="order_detailes">
+          <div id="original_price">
+            <span>Original price</span>
+            <div class="O_price"></div>
+          </div>
+          <div id="savings">
+            <span>Savings</span>
+            <span class="save"></span>
+          </div>
+          <div id="store_pick">
+            <span>Store Pickup</span>
+            <span>Free</span>
+          </div>
+          <div id="tax">
+            <span
+              ><a
+                href="https://www.bestbuy.com/site/help-topics/sales-tax/pcmcat204400050008.c?id=pcmcat204400050008"
+                >Estimated Sales Tax</a
+              ></span
+            >
+            <span class="taxes"></span>
+          </div>
+        </div>
+        <hr />
+        <div id="total">
+          <span><h4>Total</h4></span>
+          <h4 id="totals"></h4>
+        </div>
+        <button id="checkout" style="box-sizing: border-box">
+          <a href="#">Checkout</a>
+        </button>
+        <br />
+        <button id="paypal" style="box-sizing: border-box">
+          <a
+            class="paypalCheckout"
+            href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-98P735245D410500L"
+            >PayPal Checkout</a
+          >
+        </button>
+        <hr />
+        <div id="rewards_back" style="box-sizing: border-box">
+          <div id="reward_img">
+            <img
+              src="https://www.bestbuy.com/~assets/bby/_com/MBBCC_MBBVC_Contactless_Dual_Yellow_Edge_RGB-a32c353844fb660dd08157fcccf95d42.png"
+            />
+            <a
+              href="https://www.bestbuy.com/site/misc/financing-rewards/pcmcat102500050032.c?id=pcmcat102500050032"
+              >show me how></a
+            >
+          </div>
+          <div id="reward_text">
+            <h3>10% back in rewards</h3>
+            <p>
+              first day of purchases or flexible financing for new My Best Buy®
+              Credit Cardmembers.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div id="lease" style="box-sizing: border-box">
+          <h4>Looking for a lease to own option?</h4>
+          <p>
+            Enjoy the tech you want today.<a
+              href="https://www.bestbuy.com/site/financing-rewards/progressive-leasing/pcmcat1535574988808.c?id=pcmcat1535574988808"
+              >Learn more ></a
+            >
+          </p>
+        </div>
+        <hr />
+        <div id="gift" style="box-sizing: border-box">
+          <h4>Buying a gift for someone special?</h4>
+          <p>Gift options can be added in checkout.</p>
+        </div>
+        <hr />
+      </div>
     </div>
-</body>
+  </body>
 </html>
+<script src="./scripts/cart.js"></script>

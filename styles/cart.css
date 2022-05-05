@@ -3,6 +3,147 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    background-color: #f0f2f4;
+body {
+  background-color: #f0f2f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+#your_cart {
+  margin: 3vw;
+  /* border: 1px solid palevioletred; */
+  width: 70%;
+}
+.box {
+  /* border: 1px solid red; */
+  width: 100%;
+  background-color: white;
+  padding: 3vw;
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-around;
+  border: 0.1px solid rgb(209, 157, 157);
+}
+.box1 {
+  width: 5vw;
+}
+.box1 > img {
+  width: 100%;
+  height: 100%;
+}
+.store {
+  width: 13vw;
+  /* border: 1px solid red; */
+}
+.store > h6 {
+  margin-top: 0.5vw;
+  font-weight: 100;
+  color: grey;
+}
+.btn {
+  height: 2vw;
+  color: #709fdf;
+  border: none;
+  background-color: white;
+}
+.disscount {
+  background-color: #bb0628;
+  color: white;
+  padding: 0.3vw;
+  margin: 0.5vw 0vw 0.5vw 0vw;
+}
+#total_price {
+  font-weight: 700;
+  background-color: red;
+}
+
+#summary {
+  /* border: 1px solid black; */
+  width: 28%;
+  /* height: 50vw; */
+  background-color: white;
+  padding: 3vw;
+  box-sizing: border-box;
+}
+
+#summary > h3 {
+  text-align: center;
+  /* margin-top: 2vw; */
+  font-weight: 600;
+}
+#order_detailes {
+  font-size: small;
+}
+hr {
+  margin: 1.5vw 0vw 1.5vw 0vw;
+}
+#original_price,
+#savings,
+#store_pick,
+#tax,
+#total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5vw;
+}
+#checkout {
+  width: 100%;
+  height: 3vw;
+  text-size-adjust: 1vw;
+  margin-top: 0.5vw;
+  background-color: #ffe000;
+  border: none;
+  border-radius: 0.3vw;
+}
+#checkout > a {
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+#paypal {
+  width: 100%;
+  height: 3vw;
+  text-size-adjust: 1vw;
+  margin-top: 0.5vw;
+  background-color: #1d252c;
+  border: none;
+  border-radius: 0.3vw;
+  /* display: flex; */
+  font-size: medium;
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+}
+.paypalCheckout {
+  color: white;
+  text-decoration: none;
+  margin-left: 1vw;
+}
+#rewards_back {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+#reward_img {
+  width: 25%;
+  font-size: x-small;
+  margin-right: 1vw;
+}
+#reward_img > img {
+  width: 100%;
+}
+#reward_text {
+  width: 75%;
+  /* border:1px solid red ; */
+}
+#reward_text > p {
+  font-size: 11px;
+}
+#lease > p,
+#gift > p {
+  font-size: small;
+  margin-top: 0.5vw;
 }
