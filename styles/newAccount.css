@@ -1,0 +1,19 @@
+*{
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+}
+#nav{
+    background-color: #0046be;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    margin-top: 1%;
+    height: 40px;
+}
+a{
+    text-decoration: none;
+    margin-top: 2%;
+    color: white;
+    font-size: 13px;
+}
