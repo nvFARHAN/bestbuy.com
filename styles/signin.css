@@ -7,10 +7,11 @@
     display: flex;
     justify-content: space-around;
 }
-img{
+#logo{
     margin-top: 1%;
     height: 40px;
     background-color: #0046be;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
@@ -26,15 +27,18 @@ a{
 }
 #container{
     width: 28%;
-    height: 570px;
-    background-color: #f0f2f4;
+    height: 590px;
     margin: auto;
+    border: 1px solid white;
     background-color: white;
     margin-top: 2.5%;
 }
 .inner{
     width: 90%;
+    height: 550px;
     margin: auto;
+    margin-top: 2%;
+    /* //border: 1px solid saddlebrown; */
     background-color: white;
     
 }
@@ -45,12 +49,16 @@ a{
 }
 input{
     width: 100%;
-    height: 40px;
+    height: 45px;
     border-radius: 5px;
     background-color: white;
     border: 1px solid #969ba4;
     font-size: 15px;
    
+}
+input::placeholder{
+    font-weight: bolder;
+    color: #1d252c;
 }
 .a{
     text-decoration: none;
@@ -78,6 +86,9 @@ p{
     border: none;
     cursor: pointer;
 }
+#signin:hover{
+    background-color: blue;
+}
 .google{
     width: 100%;
     height: 45px;
@@ -91,6 +102,10 @@ p{
     font-weight: bolder;
     cursor: pointer;
 }
+.google:hover{
+    background-color: blue;
+    color: white;
+}
 #apple{
     width: 100%;
     height: 45px;
@@ -102,6 +117,10 @@ p{
     font-size: 17px;
     font-weight: bolder;
     cursor: pointer;
+}
+#apple:hover{
+    background-color: black;
+    color: white;
 }
 img{
     height: 15px;
