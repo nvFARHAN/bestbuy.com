@@ -1,13 +1,26 @@
 // pMSIDfTbv0JiUHOeHleFgKUF == key\
 
+import navbar from '../components/navbar.js'
+import footer from '../components/footer.js'
+
+
+let navba = document.getElementById('navbar')
+navba.innerHTML = navbar();
+document.getElementById('footer').innerHTML = footer();
 let attach =  document.getElementById('products');
 let txt =  document.getElementById('txt');
 let sort =  document.getElementById('sort');
-let searchbar = document.getElementById('searchbar');
-let bar = (e) =>{
-    if(e.key === 'Enter'){
-        console.log(searchbar.value);
-        let [x,y,z] = searchbar.value.split(' ');
+let searchbar = document.getElementById('search');
+let form = document.querySelector('form');
+let initial = JSON.parse(localStorage.getItem('search'))
+console.log(initial);
+
+
+function bar (e,item){
+    e.preventDefault();
+    console.log(item.value);
+    localStorage.setItem('viewed',JSON.stringify(item.value))
+        let [x,y,z] = item.value.split(' ');
         console.log(x);
         console.log(y);
         if(y == undefined && z == undefined){
@@ -20,24 +33,26 @@ let bar = (e) =>{
             txt.innerText = `Results for "${x+' '+y+' '+z}"`
         }
         search(x,y,z,sort.value)
-    }
+    
+    console.log(1)
     
 }
 
-function sorting(){
+function sorting(item){
     console.log(sort.value)
-    console.log(searchbar.value)
-    let [x,y,z] = searchbar.value.split(' ');
+    console.log(item.value)
+    let [x,y,z] = item.value.split(' ');
     search(x,y,z,sort.value)
 }
 
+form.addEventListener('submit', function(){
+    bar(event,searchbar)
+})
 
 sort.addEventListener('change', function(){
-    sorting();
+    sorting(searchbar);
 })
-searchbar.addEventListener('keydown',function(){
-    bar(event)
-});
+
 
 let rep;
 let imagg = document.createElement('img'); 
@@ -52,14 +67,14 @@ let search = async (x,y,z,sort) =>{
 
         if(y==undefined & z==undefined){
             
-            rep = await fetch(`https://api.bestbuy.com/v1/products((search=${x}))?apiKey=pMSIDfTbv0JiUHOeHleFgKUF&pageSize=100&sort=${sort}&page=1&format=json`)
+            rep = await fetch(`https://api.bestbuy.com/v1/products((search=${x}))?apiKey=pMSIDfTbv0JiUHOeHleFgKUF&pageSize=10&sort=${sort}&page=1&format=json`)
 
         }
         else if(z==undefined) {
-            rep = await fetch(`https://api.bestbuy.com/v1/products((search=${x}&search=${y}))?apiKey=pMSIDfTbv0JiUHOeHleFgKUF&pageSize=100&sort=${sort}&page=1&format=json`)
+            rep = await fetch(`https://api.bestbuy.com/v1/products((search=${x}&search=${y}))?apiKey=pMSIDfTbv0JiUHOeHleFgKUF&pageSize=10&sort=${sort}&page=1&format=json`)
         }
         else{
-            rep = await fetch(`https://api.bestbuy.com/v1/products((search=${x}&search=${y}&search=${z}))?apiKey=pMSIDfTbv0JiUHOeHleFgKUF&pageSize=100&sort=${sort}&page=1&format=json`)
+            rep = await fetch(`https://api.bestbuy.com/v1/products((search=${x}&search=${y}&search=${z}))?apiKey=pMSIDfTbv0JiUHOeHleFgKUF&pageSize=10&sort=${sort}&page=1&format=json`)
         }
         let data = await rep.json();
 
@@ -195,8 +210,33 @@ const append =(data) => {
 
 
         outer.append(image,box1,box2)
+        outer.addEventListener('click',function(){
+            detail(sku);
+        })
+        function detail(sku){
+            console.log(sku);
+            localStorage.setItem('SKU',JSON.stringify(sku));
+            window.location.href='showdetail.html'
+        }
         let hr = document.createElement('hr');
         attach.append(outer,hr)
 
     })
 }
+
+
+
+let srchagn = (initial) =>{
+    let [x,y,z] = initial.split(' ');
+    if(y == undefined && z == undefined){
+        txt.innerText =`Results for "${x}"`;
+    }
+    else if(z == undefined){
+        txt.innerText = `Results for "${x+' '+y}"`
+    }
+    else{
+        txt.innerText = `Results for "${x+' '+y+' '+z}"`
+    }
+    search(x,y,z,sort.value)
+}
+srchagn(initial)
