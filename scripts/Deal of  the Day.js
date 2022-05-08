@@ -1,9 +1,13 @@
 
+import navbar from "../components/navbar.js"
 
+document.getElementById("navbar").innerHTML = navbar()
+
+import footer from "../components/footer.js"
 
 
 import { menu,icn} from "../components/menu.js"
-
+document.getElementById("footer").innerHTML = footer()
 
 let data = [
     { 
