@@ -2,21 +2,36 @@
 
 * {
     font-family: 'Human BBY Digital', 'Human Fallback', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding:0px;
 }
 
 #products{
     /* border: 1px solid black; */
-    width:80%;
+    width:95%;
     margin:auto;
+    margin-top: 10px;
 
 }
 
+
+#txt{
+    margin:30px;
+    
+}
+
+
 .outer>img {
-    width: 15%;
+    width: 25%;
     padding: 40px;
-    height: 200px;
+    cursor:pointer;
+    height: 350px;
     /* border:1px solid black;     */
 
+}
+
+.outer p,h4{
+    cursor: pointer;
 }
 
 .outer {
@@ -100,7 +115,7 @@ span>img {
     font-size: 13px;
     background-color: #bb0628;
     color: white;
-    padding: 3px 7px;
+    padding: 0px 7px;
     text-align: center;
     height: 18px;
     width: auto;
@@ -162,7 +177,7 @@ span>img {
 #help{
     right:20px;
     bottom:40px;
-    /* position:absolute; */
+    cursor:pointer;
     position:fixed;
 
 }
