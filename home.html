@@ -12,17 +12,203 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="./styles/owl.carousel.min.css" />
     <link rel="stylesheet" href="./styles/owl.theme.default.min.css" />
     <!-- javascript -->
     <script src="./scripts/jquery.min.js"></script>
     <script src="./scripts/owl.carousel.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="navbar"></div>
+
+    <!-- main -->
+    <main>
+      <div
+        class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light"
+        id="main"
+      >
+        <!-- <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">Punny headline</h1>
+          <p class="lead fw-normal">
+            And an even wittier subheading to boot. Jumpstart your marketing
+            efforts with this example based on Apple’s marketing pages.
+          </p>
+          <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+        </div> -->
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div
+          class="product-device product-device-2 shadow-sm d-none d-md-block"
+        ></div>
+      </div>
+
+      <!-- owl3 -->
+      <section class="container-fluid my-3">
+        <h2 class="d-inline heading">Deals of the day</h2>
+        <div class="row mt-3">
+          <div class="large-12 columns">
+            <div id="owl3" class="owl-carousel owl-theme owlDiv"></div>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="mx-3 border-bottom py-3">Our Featured Offers</h2>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div
+          class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+        >
+          <div class="bg-body shadow-sm mx-auto p-4" style="width: 90%">
+            <img
+              class="fit"
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_4901906-ipad-mini-xx0417-16e43d8e-4791-46d7-9c38-dea012cd8ac9.jpg;maxHeight=504;maxWidth=740"
+              alt=""
+            />
+          </div>
+          <div class="my-3 p-3">
+            <h2 class="display-7">
+              iPad mini (6th gen.) Save $100 on select models.
+            </h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+        </div>
+        <div
+          class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+        >
+          <div class="bg-body shadow-sm mx-auto p-4" style="width: 90%">
+            <img
+              class="fit"
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-538012_der-f2f2805f-6ba1-4308-a03a-95f6847a49ad.jpg;maxHeight=504;maxWidth=740"
+              alt=""
+            />
+          </div>
+          <div class="my-3 py-3">
+            <h2 class="display-7">Save up to $25 on select Switch games.</h2>
+            <p class="lead">
+              Choose from the popular titles Animal Crossing: New Horizons,
+              Super Mario Party, Ring Fit Adventure, Club House Games, and Big
+              Brain Academy: Brain vs. Brain.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+        >
+          <div class="bg-body shadow-sm mx-auto p-4" style="width: 90%">
+            <img
+              class="fit"
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_MMT-526756_der-a6e216bd-5492-4cda-bcec-dd139498986b.jpg;maxHeight=504;maxWidth=740"
+              alt=""
+            />
+          </div>
+          <div class="my-3 py-3">
+            <h2 class="display-7">
+              Sustainability activated in select major appliances.
+            </h2>
+            <p class="lead">
+              Eco-friendly solutions to upgrade your home while doing good for
+              the environment.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div
+          class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+        >
+          <div class="bg-body shadow-sm mx-auto p-4" style="width: 90%">
+            <img
+              class="fit"
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt533323-2_DER2-67c2e977-b61a-456c-82f9-e6c2969487cf.jpg;maxHeight=504;maxWidth=740"
+              alt=""
+            />
+          </div>
+          <div class="my-3 p-3">
+            <h2 class="display-7">
+              Save up to $70 on select headphones for Mother’s Day.
+            </h2>
+            <p class="lead">
+              Give Mom the gift of superior sound to enjoy during her workouts,
+              workdays and more.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+        >
+          <div class="bg-body shadow-sm mx-auto p-4" style="width: 90%">
+            <img
+              class="fit"
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-524588-der-0758b409-d566-474e-b203-4e1f04cbdd44.jpg;maxHeight=504;maxWidth=740"
+              alt=""
+            />
+          </div>
+          <div class="my-3 py-3">
+            <h2 class="display-7">Electric bikes and more.</h2>
+            <p class="lead">
+              Energy-efficient and enjoyable to ride, e-vehicles are ideal for
+              families and individuals.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+        >
+          <div class="bg-body shadow-sm mx-auto p-4" style="width: 90%">
+            <img
+              class="fit"
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/mmt531221-radios-sale-pol-der-252ebc99-0777-4587-8237-b7ffe00cf405.jpg;maxHeight=504;maxWidth=740"
+              alt=""
+            />
+          </div>
+          <div class="my-3 py-3">
+            <h2 class="display-7">Shop digital media receivers</h2>
+            <p class="lead">
+              that give you powerful, hands-free options while you drive.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div
+          class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+        >
+          <div class="my-3 p-3" id="featured1">
+            <h2 class="display-5">Save up to $500</h2>
+            <p class="lead">on select smart big-screen TVs.</p>
+          </div>
+        </div>
+        <div
+          class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+        >
+          <div class="my-3 py-3" id="featured2">
+            <p class="lead">Save up to $70 on select models.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!-- owl1 -->
-    <section id="demos" class="container">
+    <section class="container-fluid my-3">
       <h2 class="d-inline heading">Trending</h2>
       <div class="row mt-3">
         <div class="large-12 columns">
@@ -31,7 +217,7 @@
       </div>
     </section>
     <!-- owl2 -->
-    <section id="demos1" class="container">
+    <section class="container-fluid my-5">
       <h2 class="d-inline heading">Most Popular</h2>
       <div class="row mt-3">
         <div class="large-12 columns">
@@ -39,6 +225,7 @@
         </div>
       </div>
     </section>
+
     <div id="footer"></div>
   </body>
 </html>

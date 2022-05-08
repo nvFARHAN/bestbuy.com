@@ -1,12 +1,121 @@
 .owlDiv > div > div > div > div {
+  height: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
-.owlDiv img {
-  height: 300px;
-  /* max-height: 300px; */
-  width: auto;
-  max-width: 100%;
-  /* aspect-ratio: inherit; */
+.imgDiv {
+  height: 200px;
+}
+.imgDiv img {
+  height: 100%;
+  object-fit: contain;
+}
+
+/* .container {
+  max-width: 960px;
+} */
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color 0.15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 5%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+#featured1 {
+  background-image: url("https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-541550-tv-70628377-026e-4dfd-9b1d-f088e8861207.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: contain;
+}
+#featured2 {
+  background-image: url("https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-541550-applewatch-20c52fff-2a61-4674-ad09-f2e0a8cd2db2.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: contain;
+}
+
+.fit {
+  width: 100%;
+  object-fit: cover;
+  /* margin-top: 2em; */
+}
+
+#main {
+  height: 80vh;
+  background: url("https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71149-ghp-3day-030422-3f0b1ace-0a3f-4bcb-a9d2-2e9d644dcb61.jpg")
+    #e0e6ef no-repeat 50% 0% / auto 100%;
+  background-size: contain;
+}
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+}
+.price > span:nth-child(1) {
+  font-weight: bold;
+}
+.price > span:nth-child(2) {
+  text-decoration: line-through;
+  font-size: small;
 }

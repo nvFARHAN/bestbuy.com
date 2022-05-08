@@ -22,7 +22,7 @@ let navbar = () => {
               <span class="fw-bold fs-4">Menu</span>
             </a>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <ul class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
               <li><a class="dropdown-item" href="#">Deals</a></li>
               <li><a class="dropdown-item" href="#">Support & Services</a></li>
               <li><a class="dropdown-item" href="#">Brands</a></li>
@@ -68,7 +68,7 @@ let navbar = () => {
               <li><a class="dropdown-item" href="#">Best Buy Outlet</a></li>
             </ul>
           </div>
-          <form class="d-flex">
+          <form id=form class="d-flex">
             <input
               id="search"
               class="border-0 rounded-start px-3"
