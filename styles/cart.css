@@ -33,6 +33,11 @@ body {
   width: 100%;
   height: 100%;
 }
+.box2{
+  /* border: 1px solid red; */
+  width: 12vw;
+  font-size:medium;
+}
 .store {
   width: 13vw;
   /* border: 1px solid red; */
