@@ -27,7 +27,7 @@ body {
   border: 0.1px solid rgb(209, 157, 157);
 }
 .box1 {
-  width: 5vw;
+  width: 9vw;
 }
 .box1 > img {
   width: 100%;
@@ -51,7 +51,7 @@ body {
 .disscount {
   background-color: #bb0628;
   color: white;
-  padding: 0.3vw;
+  padding: 0.1vw;
   margin: 0.5vw 0vw 0.5vw 0vw;
 }
 #total_price {

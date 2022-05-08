@@ -1,33 +1,41 @@
-// let data1 = [
-//   {
-//     img: "https://pisces.bbystatic.com/image2//BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=100;maxWidth=100",
-//     name: "Apple Air pods",
-//     price: 219,
-//   },
+let data1 = [
+  {
+    img: "https://pisces.bbystatic.com/image2//BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=100;maxWidth=100",
+    name: "Apple Air pods",
+    price: 219,
+  },
 
-//   {
-//     img: "https://pisces.bbystatic.com/image2//BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=100;maxWidth=100",
-//     name: "Apple Air pods",
-//     price: 209,
-//   },
+  {
+    img: "https://pisces.bbystatic.com/image2//BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=100;maxWidth=100",
+    name: "Apple Air pods",
+    price: 209,
+  },
 
-//   {
-//     img: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6395/6395763_sd.jpg;maxHeight=150;maxWidth=170",
-//     name: "Apple Air pods",
-//     price: 209,
-//   },
+  {
+    img: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6395/6395763_sd.jpg;maxHeight=150;maxWidth=170",
+    name: "Apple Air pods",
+    price: 209,
+  },
 
-//   {
-//     img: "https://pisces.bbystatic.com/image2//BestBuy_US/images/products/6418/6418601_sd.jpg;maxHeight=100;maxWidth=100",
-//     name: "Apple Air pods",
-//     price: 209,
-//   },
-// ];
+  {
+    img: "https://pisces.bbystatic.com/image2//BestBuy_US/images/products/6418/6418601_sd.jpg;maxHeight=100;maxWidth=100",
+    name: "Apple Air pods",
+    price: 209,
+  },
+];
 
 
-// localStorage.setItem("data", JSON.stringify(data1));
+localStorage.setItem("data", JSON.stringify(data1));
 
 // have to remove this above data when i recevied data from product page made by teammate and get via local storage
+
+
+
+import navbar from "../components/navbar.js"
+ import footer from "../components/footer.js"
+
+document.getElementById("navbar").innerHTML = navbar()
+document.getElementById("footer").innerHTML = footer()
 
 const data = JSON.parse(localStorage.getItem("data")) || [];
 
@@ -78,7 +86,7 @@ function append() {
 
     let p_div = document.createElement("div");
 
-    let price = document.createElement("p");
+    let price = document.createElement("h3");
     price.innerText = `$${el.price - (el.price * 15) / 100}`;
 
     let disscount = document.createElement("h6");
@@ -96,6 +104,8 @@ function append() {
   });
 }
 
+
+// this below calling function calls from Add to cart button and it has to add in that button from product page. 
 append();
 
 function removedata(el, index) {
@@ -131,3 +141,16 @@ let total = document.getElementById("totals");
 total.innerText = `$ ${(sum + sum_saving + tax).toFixed(2)}`;
 
 // console.log(total.innerText);
+
+
+
+
+
+// the Below data goes to localstoage and other team member have to collect data from Local storage 
+let cartdatas = document.getElementById("checkout").addEventListener("click",checkout);
+
+function checkout(){
+
+localStorage.setItem("cartdata",JSON.stringify(data))
+console.log(data);
+}
