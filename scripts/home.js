@@ -30,11 +30,12 @@ let carousel0 = () => {
 };
 
 let form = document.getElementById("form");
-form.addEventListener("submit", () => {
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
   let key = form.search.value;
   console.log(key);
-  localStorage.setItem("key", key);
-  window.location.href = "#";
+  localStorage.setItem("search", JSON.stringify(key));
+window.location.href = 'searchpro.html'
 });
 
 let menu = document.querySelectorAll(".menu > li > a");
