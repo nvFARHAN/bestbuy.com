@@ -89,7 +89,7 @@ let navbar = () => {
 
         <div class="d-flex justify-content-between">
           <!-- <a class="nav-link text-light h4" href="#">Aiea</a> -->
-          <a class="nav-link text-light h4" href="cart.html">Cart</a>
+          <a class="nav-link text-light h4" href="cart.html"><i class="fas fa-shopping-cart"></i>  Cart</a>
         </div>
       </div>
     </nav>

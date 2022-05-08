@@ -119,3 +119,13 @@
   text-decoration: line-through;
   font-size: small;
 }
+#sec > div > div {
+  background-color: whitesmoke;
+}
+#sec img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#sec span {
+  color: #0d6efd;
+}
