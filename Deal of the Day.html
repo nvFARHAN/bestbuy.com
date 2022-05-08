@@ -5,87 +5,837 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dealof the Day.</title>
+
+    <link rel="stylesheet" href="./styles/Deal of the Day.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Montserrat:wght@100;200;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
-    * {
-      padding: 0;
-      margin: 0;
-      font-family: "Poppins";
-   
-      
-    }
-    span {
-      background-color: red;
-      /* font-weight: 800; */
-      padding: 0% 0% 0% 0%;
-    }
-    #main {
-      background-color: rgb(12, 81, 204);
-      /* border: 1px solid red; */
-      height: 180px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 500;
-      color: white;
-    }
-    #main h2 {
-        font-family: Poppins;
-        font-weight: 800;
-        font-size: 46px;
-        color: white;
-    }
-    #main-box-1 {
-      width: 400px;
-      /* border: 1px solid red; */
-      margin-left: 5%;
-    }
-    #deal {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 70%;
-        margin: auto;
-        margin-top: 2%;
-    }
-    #deal-box1 {
-        border: 1px solid red;
-        width: auto;
-    }
-    #deal-box2 {
-        border: 1px solid red;
-        width: 60%;
-    }
-    #deal img {
-        width: 60%;
-    }
-  </style>
+
   <body>
     <div id="main">
       <div id="main-box-1">
         <h2><span>Deal</span> of the Day</h2>
-        <p>Great new deals. Every day.</p>
-        <p>See Deal of the Day FAQs</p>
+        <p style="line-height: 24px;" >Great new deals. Every day.</p>
+        <p style="color: yellow; line-height: 2px; font-size: 12.5px;" >See Deal of the Day FAQs</p>
       </div>
+
       <div id="main-box-2"></div>
     </div>
-    
-    <div id="deal">
 
-        <div id="deal-box1">
-            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6455/6455902_sd.jpg;maxHeight=640;maxWidth=550" alt="" srcset="">
+    <div id="deal">
+      <div id="deal-box1">
+        <img style="width: 50%;"
+          src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457697_sd.jpg;maxHeight=640;maxWidth=550"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+      <div id="deal-box2">
+        <h3 style="color: rgb(0,0,254); font-size: 22px;" >Star Wars - Galactic Snackin’ Grogu</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span style="background-color:white; font-size:12px; font-weight: 400;">(25)</span>
+
+        <p style="color: rgb(49,132,25); font-weight: 600; font-size: 14px;" >Get it in 13 Days</p>
+        
+        <!-- <span class="fa-thin fa-ticket"></span> -->
+        
+        <h3 style="line-height: 20px; font-size: 14px; "> <b style="background-color: white; color: black;" >Pickup:</b>Order now for pickup on Thu, May 19 at Aiea  </h3>
+        
+        <p style="line-height: 2px; margin-left: 1%; font-size: 12px; color: rgb(0,0,254); "> See all pickup locations</p>
+        
+        <h3 style="line-height: 20px; font-size: 14px; "> <b style="background-color: white; color: black;" >Shipping:</b> Unavailable in your area  </h3>
+        
+        <h3 style="line-height: 20px; line-height: 6px; margin-left: 1%; font-size: 12px; "> This item is only available in certain markets.  </h3>
+
+        <p style="line-height: 14px; margin-left: 1%; font-size: 12px; color: rgb(0,0,254); "> Estimates for 96939</p>
+        
+        <h2 style="font-weight: bolder;">$27.99</h2>
+        
+        <p><b>save $57</b> Was $84.99</p>
+        
+        <p style="font-size: 14px;">3 free months of YouTube Premium</p>
+        <button id="Add-to-cart">
+          <i class="fa-solid fa-cart-shopping"></i> Add to cart
+        </button>
+      </div>
+    </div>
+<!-- .............................. -->
+    <hr />
+    <h1>Bonus Deals of the Day</h1>
+    <hr />
+
+    <div id="deal-of-the-day">
+
+    </div>
+
+
+    <!-- .................. -->
+
+    <div id="form-box">
+      <h3 style="font-weight: 1800; font-family: Poppins; font-size: 28px">
+        Get the Deal of the Day delivered to you.
+      </h3>
+      <p>Sign up for daily emails, texts or both.</p>
+
+      <div id="main-form">
+        <div id="main-form-left">
+          <h4  >Email</h4>
+          <input type="email" />
+          <button>Sign Up</button>
+        </div>
+        <div id="main-form-right">
+          <h4>Text</h4>
+          <input type="Text" />
+          <p style="font-size: 10px">
+            Texts are automated and consent is optional, not a condition of
+            purchase. Message and data rates may apply. Terms and Privacy Policy
+            apply ›
+          </p>
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- .............. -->
+
+    <div id="delivery">
+      
+        <img
+          src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-37875-app-curbside-vpe_der-149659.png;maxHeight=160;maxWidth=160"
+          alt=""
+          srcset=""
+        />
+        <div>
+        <h4>Read in one hour</h4>
+        <p>with Store or Curbside Pickup.</p>
+      </div>
+      
+        <img
+          src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=160;maxWidth=160"
+          alt=""
+          srcset=""
+        />
+        <div>
+        <h4>Free next-day delivery</h4>
+        <p>on thousands of items.</p>
+      </div>
+      
+        <img
+          src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=160;maxWidth=160"
+          alt=""
+          srcset=""
+        />
+        <div>
+        <h4>Same-day delivery.</h4>
+        <p>Same-day delivery.</p>
+        <p style="font-size: 9px">Order by 3 p.m., get it by 8 p.m.</p>
+      </div>
+    </div>
+<!-- ///////////////////////////////////// -->
+
+<div id="sale">
+
+    <div id="sale-left" >
+
+        <div>
+          <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71149-pol-3day-030422-de628469-ee93-4454-99c8-478bc3b193d0.jpg;maxHeight=188;maxWidth=276" alt="" srcset="">
         </div>
 
-        <div id="deal-box2">
-        
-            <h3>HP - 14" 2-In-1  Touchscreen Chromebook - Intel Celeron - 4GB Memory - 32GB eMMC - Natural Silver
-                HP - 14" 2-In-1 Touchscreen Chromebook - Intel Celeron - 4GB Memory - 32GB eMMC - Natural Silver
-            </h3>
-            <p>$189.00</p>
+        <div>
+          <h3>Surprise — big deals are here. </h3>
+          <p style="line-height: -1px;">Save on TVs, laptops and more. </p>
+          <p style="line-height: -1px; color: gray; font-weight: 400; font-size: 12px; " > Limited quantities. </p>
         </div>
 
     </div>
 
+    <div id="sale-right" >
+
+    </div>
+
+</div>
+
+<div id="top-deal">
+
+  <div><h4>Top</h4></div>
+  <div><p>Today’s featured deals and top tech. Valid through 5/8/22.*</p></div>
+
+
+</div>
+
+
+    <!-- ......................` -->
+    <!-- <div id="heading">
+      <!-- <a href="">Best Buy</a> -->
+      <!-- <h2>Learn about measuring, delivery and installation (12 items)</h2> -->
+  <!-- </div> --> -->
+  
+  <!-- carousel 1 start  -->
+
+  <div style="width: 100%; margin: auto;" id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="row row-cols-8 row-cols-md-8 g-4">
+                  
+                  <div class="col">
+                  <div class="card">
+                      <img id="images" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/FeaturedDeals_Blue_Solid_Lg_RGB-104799.png;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <h5 class="card-title">Featured deals</h5>
+                      </div>
+                  </div>
+                  </div>
+  
+                  <div class="col">
+                  <div class="card">
+                      <img id="images" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479683_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Featured deals</h5>
+                      </div>
+                  </div>
+                  </div>
+  
+                  <div class="col">
+                  <div class="card">
+                      <img  id="images" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459308_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Featured deals</h5>
+                      </div>
+                  </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501675cv11d.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Featured deals</h5>
+                        </div>
+                  </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443321_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Featured deals</h5>
+                        </div>
+                  </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6351/6351409_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Featured deals</h5>
+                        </div>
+                    </div>
+                    </div>
+              
+                    <div class="col">
+                      <div class="card">
+                          <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443974_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Featured deals</h5>
+                          </div>
+                      </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card">
+                            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4900/4900919_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Featured deals</h5>
+                            </div>
+                        </div>
+                        </div>
+
+              </div>
+          </div>
+
+          
+          <div class="carousel-item ">
+            <div class="row row-cols-9 row-cols-md-9 g-4">
+                
+                <div class="col">
+                <div class="card">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6168/6168626_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Featured deals</h5>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="card">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4659/4659801_rd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Featured deals</h5>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="card">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494419_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Featured deals</h5>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6213/6213100_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Featured deals</h5>
+                      </div>
+                </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477363cv11d.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Featured deals</h5>
+                      </div>
+                </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461319_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Featured deals</h5>
+                      </div>
+                  </div>
+                  </div>
+  
+                  <div class="col">
+                  <div class="card">
+                      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425999_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Featured deals</h5>
+                      </div>
+                  </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="border: 1px solid black;">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6421/6421820ld.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Featured deals</h5>
+                        </div>
+                    </div>
+                    </div>
+            <!-- enc -->
+            </div>
+        </div>
+      <button style="background-color: black;  width: 60px; height: 100%;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button style="background-color: black;  width: 60px; height: 100%;"  class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- corousel 1 end  -->
+
+    <div style="height: 90px; 
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-size: 22px;
+    font-weight: 600;
+    width: 98%;
+    margin: auto;
+
+
+    " > 
+    
+      <p> Deals for you (15 items)</p>
+    </div>
+
+
+    <!-- corousel 2 start  -->
+    
+  <div style="width: 100%; margin: auto;" id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row row-cols-8 row-cols-md-8 g-4">
+                
+                <div class="col">
+                <div class="card">
+                    <img id="images" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4758/4758301cv22d.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Featured deals</h5>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="card">
+                    <img id="images" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5856/5856600_sd.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Featured deals</h5>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="card">
+                    <img  id="images" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6489/6489041_sd.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Featured deals</h5>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412331_sd.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Featured deals</h5>
+                      </div>
+                </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406512_sd.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Featured deals</h5>
+                      </div>
+                </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1620/1620218_sd.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Featured deals</h5>
+                      </div>
+                  </div>
+                  </div>
+
+            </div>
+        </div>
+
+        
+        <div class="carousel-item ">
+          <div class="row row-cols-9 row-cols-md-9 g-4">
+              
+              <div class="col">
+              <div class="card">
+                  <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6315/6315751_sd.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Featured deals</h5>
+                  </div>
+              </div>
+              </div>
+
+              <div class="col">
+              <div class="card">
+                  <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401738_sd.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Featured deals</h5>
+                  </div>
+              </div>
+              </div>
+
+              <div class="col">
+              <div class="card">
+                  <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494419_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Featured deals</h5>
+                  </div>
+              </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6421/6421833_sd.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Featured deals</h5>
+                    </div>
+              </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425303_sd.jpg;maxHeight=272;maxWidth=400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Featured deals</h5>
+                    </div>
+              </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461319_sd.jpg;maxHeight=140;maxWidth=140" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Featured deals</h5>
+                    </div>
+                </div>
+                </div>
+
+          <!-- enc -->
+          </div>
+      </div>
+    <button style="background-color: black;  width: 60px; height: 100%;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button style="background-color: black;  width: 60px; height: 100%;"  class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- carousel 2 end  -->
+    <!-- ......... -->
+    
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" 
+                
+              style="text-align: left; 
+              font-size: 16px; 
+              color: black;
+              font-weight: 700;
+              " 
+              
+
+              >
+              
+              Where every day is a one-day sale. 
+            
+            </h5>
+
+            <p 
+            class="card-text" 
+                  style=" font-size: 9px;
+                  font-weight: 400;
+                  " >
+            When you shop the Best Buy Deal of the Day, or sign up for our daily e-mails, you'll find fantastic prices on tech from every corner of our site. For example, if you're shopping for laptop deals, we have incredible offers on powerful laptops that will get you ready for work or play and leave money in your pocket for cool accessories too.
+            </p>
+
+            <p 
+            class="card-text" 
+                  style=" font-size: 9px;
+                  font-weight: 400;
+                  " >
+            Although these amazing deals rotate every day, we always have more than one sale a day going on. We even have sales on whole categories of products and deals tailored for a particular audience, such as deals for students to help you or someone you know head off to college with the tech they need to succeed.
+            </p>
+
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" >
+          <div class="card-body" >
+
+            <p 
+            class="card-text" 
+                  style=" font-size: 9px;
+                  font-weight: 400;
+                  " >
+            While some sales, like our Cyber Monday sale, only happen once a year, the Deal of the Day is an ongoing event that lets you look for new deals every morning in your inbox or on BestBuy.com. In addition, you can get even more hot deals on all of the tech you love, including some of the latest and most popular tech on the market.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /////////////////////////////// -->
+    
+   
+
   </body>
+
 </html>
+
+<script src="./scripts/Deal of  the Day.js" type="module" ></script>
+
+<script
+  src="https://kit.fontawesome.com/24c494a6b6.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
+
+
+<!-- <div>
+
+  <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+  </div>
+  
+</div> --> 
+
+
+<!-- 
+<div id="grid">
+  <div>
+    <img
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6434/6434133_sd.jpg;maxHeight=300;maxWidth=450"
+      alt=""
+      srcset=""
+    />
+    <p>Save 20%–30% on select Star Wars LEGO sets.</p>
+    <button id="shop-now">Shop now</button>
+  </div>
+  <div>
+    <img
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6416/6416340_sd.jpg;maxHeight=300;maxWidth=450"
+      alt=""
+      srcset=""
+    />
+    <p>Save 20%–40% on select Star Wars plush figures.</p>
+    <button id="shop-now">Shop now</button>
+  </div>
+  <div>
+    <img
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6340/6340339_sd.jpg;maxHeight=300;maxWidth=450"
+      alt=""
+      srcset=""
+    />
+    <p>Save 25% on Star Wars Jedi Fallen Order video games.</p>
+    <button id="shop-now">Shop now</button>
+  </div>
+  <div>
+    <img
+      id="img"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502865_sd.jpg;maxHeight=300;maxWidth=450"
+      alt=""
+      srcset=""
+    />
+    <p>Save 20% on select 4D Puzz Star Wars puzzles.</p>
+    <button id="shop-now">Shop now</button>
+  </div>
+  <div>
+    <img
+      id="img"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6495/6495361_sd.jpg;maxHeight=640;maxWidth=550"
+      alt=""
+      srcset=""
+    />
+    <p>
+      Seagate - Star Wars SE Beskar Ingot Drive FireCuda 1TB SATA Internal
+      SSD with Rescue Data Recovery Services
+    </p>
+    <h2  >$27.99</h2>
+    <p><b>save $57</b> Was $84.99</p>
+    <p>3 free months of YouTube Premium</p>
+    <button id="add-to-cart">
+      <i class="fa-solid fa-cart-shopping"></i> Add to cart
+    </button>
+  </div>
+
+  <div>
+    <img
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462243_sd.jpg;maxHeight=300;maxWidth=450"
+      alt=""
+      srcset=""
+    />
+    <p>Save 40% on select CMD Collectibles Star Wars FigPin figures.</p>
+    <button id="shop-now">Shop now</button>
+  </div>
+
+  <div>
+    <img
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6393/6393929_so.jpg;maxHeight=300;maxWidth=450"
+      alt=""
+      srcset=""
+    />
+    <p>
+      Save on select Star Wars movies on DVD, Blu-ray Disc and digital
+      format.
+    </p>
+    <button id="shop-now">Shop now</button>
+  </div>
+
+  <div>
+    <img
+      id="img"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482982_rd.jpg"
+      alt=""
+      srcset=""
+    />
+    <p>
+      Buy one BlenderBottle Classic V2 Star Wars–themed bottle, get one
+      free.
+    </p>
+    <button id="shop-now">Shop now</button>
+  </div>
+
+  <div>
+    <img
+      id="img"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482995_rd.jpg"
+      alt=""
+      srcset=""
+    />
+    <p>Free Spirit BlenderBottle Classic V2 - Blue</p>
+    <button id="shop-now">Shop now</button>
+  </div>
+  
+  <div>
+    <img
+      id="img"
+      style="width: 60%"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500768_rd.jpg;maxHeight=640;maxWidth=550"
+      alt=""
+      srcset=""
+    />
+    <p>iRobot Roomba 981 Wi-Fi Connected Robot Vacuum - Black</p>
+    <h2>$249.99</h2>
+    <p><b>save $200</b> Was $444.99</p>
+    <p>Deal ends in 20:16:</p>
+    <button id="add-to-cart">
+      <i class="fa-solid fa-cart-shopping"></i> Add to cart
+    </button>
+  </div>
+
+  <div>
+    <img
+      id="img"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463115_sd.jpg;maxHeight=640;maxWidth=550"
+      alt=""
+      srcset=""
+    />
+    <p>
+      Seagate - Star Wars SE Beskar Ingot Drive FireCuda 1TB SATA Internal
+      SSD with Rescue Data Recovery Services
+    </p>
+    <h2>$339.99</h2>
+    <p><b>save $140</b> Was $479.99</p>
+    <p>Deal ends in 20:16:</p>
+    <button id="add-to-cart">
+      <i class="fa-solid fa-cart-shopping"></i> Add to cart
+    </button>
+  </div>
+
+  <div>
+    <img
+      id="img"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6455/6455115_rd.jpg;maxHeight=640;maxWidth=550"
+      alt=""
+      srcset=""
+    />
+    <p>
+      Seagate - Star Wars SE Beskar Ingot Drive FireCuda 1TB SATA Internal
+      SSD with Rescue Data Recovery Services
+    </p>
+    <h2>$199.99</h2>
+    <p><b>save $200</b> Was $39.99</p>
+    <p>Deal ends in 20:16:</p>
+    <button id="add-to-cart">
+      <i class="fa-solid fa-cart-shopping"></i> Add to cart
+    </button>
+  </div>
+
+  <div>
+    <img
+      id="img"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462988_sd.jpg;maxHeight=640;maxWidth=550"
+      alt=""
+      srcset=""
+    />
+    <p>
+      Seagate - Star Wars SE Beskar Ingot Drive FireCuda 1TB SATA Internal
+      SSD with Rescue Data Recovery Services
+    </p>
+    <h2>$199.99</h2>
+    <p><b>save $200</b> Was $39.99</p>
+    <p>Deal ends in 20:16:</p>
+    <button id="add-to-cart">
+      <i class="fa-solid fa-cart-shopping"></i> Add to cart
+    </button>
+  </div>
+
+  <div>
+    <img
+      id="img"
+      style="width: 55%"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406691_rd.jpg;maxHeight=640;maxWidth=550"
+      alt=""
+      srcset=""
+    />
+    <p>
+      Seagate - Star Wars SE Beskar Ingot Drive FireCuda 1TB SATA Internal
+      SSD with Rescue Data Recovery Services
+    </p>
+    <h2>$199.99</h2>
+    <p><b>save $200</b> Was $39.99</p>
+    <p>Deal ends in 20:16:</p>
+    <button id="add-to-cart">
+      <i class="fa-solid fa-cart-shopping"></i> Add to cart
+    </button>
+  </div>
+
+  <div>
+    <img
+      id="img"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463719_rd.jpg;maxHeight=640;maxWidth=550"
+      alt=""
+      srcset=""
+    />
+    <p>
+      Seagate - Star Wars SE Beskar Ingot Drive FireCuda 1TB SATA Internal
+      SSD with Rescue Data Recovery Services
+    </p>
+    <h2>$199.99</h2>
+    <p><b>save $200</b> Was $39.99</p>
+    <p>Deal ends in 20:16:</p>
+    <button id="add-to-cart">
+      <i class="fa-solid fa-cart-shopping"></i> Add to cart
+    </button>
+  </div>
+
+  <div>
+    <img
+      id="img"
+      style="width: 47%"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463717_rd.jpg;maxHeight=640;maxWidth=550"
+      alt=""
+      srcset=""
+    />
+    <p>
+      Seagate - Star Wars SE Beskar Ingot Drive FireCuda 1TB SATA Internal
+      SSD with Rescue Data Recovery Services
+    </p>
+    <h2>$199.99</h2>
+    <p><b>save $200</b> Was $39.99</p>
+    <p>Deal ends in 20:16:</p>
+    <button id="add-to-cart">
+      <i class="fa-solid fa-cart-shopping"></i> Add to cart
+    </button>
+  </div>
+
+</div> -->

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Montserrat:wght@100;200;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+#black-box {
+
+    height: 354px;
+    /* border: 1px solid black; */
+    background-color: black;
+    background-image: url('/images/Untitled-5.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+}
+#Best-Buy {
+    /* height: 100px; */
+    margin: auto;
+    /* border: 1px solid black; */
+    width: 70%;
+}
+
+/* //////// */
+
+.sticky-div {
+    background-color: green;
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px;
+}
+ 
+.start {
+    height: 100px;
+}
+ 
+.end {
+    height: 500px;
+}
+
+/* //////////// */
+
+#gray {
+    height: 100px;
+    /* border: 1px solid black; */
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224,230,239);
+    font-size: 12px;
+}
+a {
+    font-family: Poppins;
+    font-size: 12px;
+}
+#gray-box {
+    margin: auto;
+    width: 66%;
+}
+
+/* ///////////////////// */
+
+#Best-buy {
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 66%;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ................... */
+
+
+
+#Insignia {
+    height: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+#Insignia-left {
+    /* border: 1px solid red;  */
+    padding: 20px;
+}
+#Insignia-right {
+    /* border: 1px solid red; */
+    width: 26%;
+    margin: 20px;
+}
+#Insignia-left h1 {
+    font-weight: 800;
+}
+
+/* ///////////////////////// */
+.card-group {
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 70%;
+    padding: 2%;
+}
+
+/* ... */
+#heading {
+    /* border: 1px solid red; */
+    width: 66%;
+    margin: auto;
+    text-align: center;
+
+}
+#ing img {
+    /* border: 1px solid red; */
+    width: 100%;
+}

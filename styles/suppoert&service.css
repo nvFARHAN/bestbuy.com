@@ -1,0 +1,102 @@
+#board {
+    height: 200px;
+    /* border: 1px solid red; */
+}
+#support-topics {
+    /* background-color: antiquewhite; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: auto;
+    width: 94%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    /* grid-template-rows: repeat(auto); */
+}
+#support-topics i {
+    font-size: 100px;
+    color: red;
+    color: antiquewhite;
+}
+#support-topics div{ 
+    background-color: white;
+
+    border: 0.2px solid gray;
+
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.card {
+    margin: auto;
+    width: 90%;
+}
+svg {
+    color: red;
+    width: 24%;
+}
+
+#back {
+    background-color: rgb(240,242,244);
+    padding: 2% 0% 2% 0%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.support-home-banner {
+    /* border: 1px solid red; */
+    background-color:  black;
+
+
+}
+
+.support-home-title--h1 {
+
+font-size: 354px;
+}
+
+.support-home-banner p {
+    font-size: 30px;
+}
+
+
+
+.support-home-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 0 15px;
+    margin: 0 -15px;
+    z-index: 1;
+    background: url(https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/blueshirtexpert-186474.png;maxHeight=1000;maxWidth=407) no-repeat,url(https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/geeksquadagent-186475.png;maxHeight=1000;maxWidth=483) no-repeat;
+    background-size: 350px;
+    height: 400px;
+    background-position-x: calc(36% - 327px),calc(64% + 312px);
+    background-position-y: 40px;
+
+}
+
+.support-home-banner h1 {
+    font-size: 60px;
+}
+
+.card-body h5 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-body {
+    /* min-height: 100%; */
+}
+
+/* .card-body {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0,0,254);
+    font-weight: 400;
+} */
