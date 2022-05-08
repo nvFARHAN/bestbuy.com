@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Products</title>
+    <link rel="stylesheet" href="./styles/search.css">
+    <script src="https://kit.fontawesome.com/c610c7a2ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input id="searchbar" type="text" />
+    <p id="txt"></p>
+    
+    <div id="left">
+    <label>Sort By:</label>
+    <select id="sort">
+        <option value="customerReviewAverage.dsc">Best Match</option>
+        <option value="customerReviewCount.dsc">Best Selling</option>
+        <option value="salePrice.asc">Price Low to High</option> 
+        <option value="salePrice.dsc">Price High to Low</option> 
+        <option value="customerReviewCount.dsc">Customer Rating</option> 
+        <option value="name.asc">Brand A-Z</option> 
+        <option value="name.dsc">Brand Z-A</option> 
+    </select>
+</div>
+
+    <div id="products"></div>
+
+    <img id="help" src="./icon/BlueAssistIcon-178084.svg"/>
+    
+</body>
+</html>
+<script src="./scripts/search.js"></script>
