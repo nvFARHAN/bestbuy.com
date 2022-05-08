@@ -1,0 +1,141 @@
+*{
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;   
+}
+#nav{
+    background-color: #0046be;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    margin-top: 1%;
+    height: 40px;
+    background-color: #0046be;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    margin-top: 2%;
+    color: white;
+    font-size: 13px;
+    background-color: #0046be;
+}
+#containers{
+    height: 680px;
+    background-color: #f0f2f4;
+    border: 1px solid #f0f2f4;
+}
+#container{
+    width: 28%;
+    height: 590px;
+    margin: auto;
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 2.5%;
+}
+.inner{
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    margin-top: 2%;
+    /* //border: 1px solid saddlebrown; */
+    background-color: white;
+    
+}
+#header{
+    text-align: center;
+    background-color: white;
+   
+}
+input{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #969ba4;
+    font-size: 15px;
+   
+}
+input::placeholder{
+    font-weight: bolder;
+    color: #1d252c;
+}
+.a{
+    text-decoration: none;
+    background-color: white;
+    color: #0046be;
+    font-size: 13px;
+}
+p{
+    font-size: 13px;
+}
+.icon{
+    margin-left: 210px;
+    font-size: 15px;
+    background-color: white;
+}
+#signin{
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #0046be;
+    font-size: 17px;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#signin:hover{
+    background-color: blue;
+}
+.google{
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    line-height: 10px;
+    color:#0046be;
+    border: 1px solid #0046be;
+    font-size: 17px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.google:hover{
+    background-color: blue;
+    color: white;
+}
+#apple{
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    line-height: 10px;
+    border: 1px solid black;
+    font-size: 17px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#apple:hover{
+    background-color: black;
+    color: white;
+}
+img{
+    height: 15px;
+}
+#footer{
+    height: 10px;
+    width: 75%;
+    margin: auto;
+}
+.footer{
+    text-decoration: none;
+    background-color: white;
+    color: #0046be;
+}
+.pf{
+    font-size:11px;
+}
+

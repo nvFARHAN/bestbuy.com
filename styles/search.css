@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Human BBY Digital', 'Human Fallback', Arial, Helvetica, sans-serif;
+}
+
+#products{
+    /* border: 1px solid black; */
+    width:80%;
+    margin:auto;
+
+}
+
+.outer>img {
+    width: 15%;
+    padding: 40px;
+    height: 200px;
+    /* border:1px solid black;     */
+
+}
+
+.outer {
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+
+.box1 {
+    padding: 1rem;
+    width: 364px;
+    /* border: 1px solid black; */
+
+}
+
+.box1 h4 {
+    font-size: 14px;
+    color: #0457c8;
+}
+
+.box1 p {
+    font-size: 13px;
+}
+
+.box1 p:nth-child(2) {
+    font-size: 11px;
+    font-weight: 500;
+    /* border:1px solid black; */
+
+}
+
+.box1 p:nth-child(3) {
+    font-size: 13px;
+    color: #0457c8;
+}
+
+.box1 p:nth-child(3) span {
+    color:yellow;
+}
+
+.box1 p:nth-child(5) {
+    display: inline-block;
+    /* border:1px solid maroon; */
+    margin-top: 0px;
+    padding: 0px;
+}
+
+
+.box1 p:nth-child(6) span>i {
+    height:20px;width:20px;
+    color:gray;
+}
+
+span>img {
+    /* margin-top:15px; */
+    margin: 0px;
+    padding: 0px;
+    /* border:1px solid maroon; */
+
+    height: 23px;
+    width: 28px;
+
+}
+
+
+.bld {
+    font-weight: bold;
+    color: black;
+    font-size: 13px;
+}
+
+.box2 {
+    padding: 1rem;
+
+    /* border: 1px solid black; */
+
+}
+
+
+.smallp #dis {
+    font-size: 13px;
+    background-color: #bb0628;
+    color: white;
+    padding: 3px 7px;
+    text-align: center;
+    height: 18px;
+    width: auto;
+    /* font-weight:bold; */
+    border-radius: 4px;
+}
+
+.box2 p:first-child {
+    /* border:1px solid maroon; */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+.box2 #free {
+    /* border: 1px solid black; */
+    color: #0046be;
+    font-size: 13px;
+}
+
+.smallp {
+    display: flex;
+    /* border:1px solid black; */
+    margin-top: -25px;
+    height: 30px;
+    gap: 5px;
+}
+
+.smallp p {
+    margin-top: 0px;
+    font-size: 13px;
+}
+
+#add_cart {
+    background-color: #ffe700;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    height: 30px;
+    width: 230px;
+}
+
+#add_cart:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.imagg{
+    /* border: 1px solid; */
+    margin:auto;margin-top:100px;
+    height:450px;
+    width:50%;
+    display:block;
+}
+
+#help{
+    right:20px;
+    bottom:40px;
+    /* position:absolute; */
+    position:fixed;
+
+}
+
+#left{
+    display: flex;
+    justify-content: flex-end;
+    /* border:1px solid maroon; */
+}
+
+#sort{
+    /* text-align: center; */
+    height:30px;
+    width:154px;
+    font-size: 15px;
+    margin-right:30px;
+    padding:0px;
+   line-height: 18px;
+    border-radius: 4px;
+}
+option{
+    border:1px solid rgb(57, 14, 14);
+    font-size: 15px;
+}
+
+label{
+    margin-top:6px;
+    font-size: 15px;
+
+}
