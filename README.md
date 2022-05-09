@@ -33,6 +33,6 @@ We all learned how to plan a project and execute that.
 Check our website at :
 
 GitHub- https://nvfarhan.github.io/bestbuy.com/
-Netlify- https://incredible-custard-b1be29.netlify.app
-Blog- https://medium.com/@shrimalibhaskar2398/5432691f9dcf
-Video- https://drive.google.com/file/d/1ib4oYGZfM4e48SlpLVlIi9nLVNTJOVcJ/view?usp=sharing
+Netlify- https://unit3-group-project.netlify.app/
+Blog- https://medium.com/@Bhasker23/collaborative-project-bestbuy-com-clone-9f44213b14f9
+Video- https://drive.google.com/file/d/1WcFKY96q2Oa6kMf2qNtbz78tv7BCavRU/view?usp=sharing
