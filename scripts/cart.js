@@ -64,14 +64,14 @@ function append() {
     box1.setAttribute("class", "box1");
 
     let img = document.createElement("img");
-    img.src = el.images.standard;
+    img.src = el.image;
 
     let box2 = document.createElement("div");
     box2.setAttribute("class", "box2");
     
     
     let name = document.createElement("p");
-    name.innerText = el.names.title;
+    name.innerText = el.name;
 
     let store = document.createElement("div");
     store.setAttribute("class", "store");
@@ -93,14 +93,14 @@ function append() {
     let p_div = document.createElement("div");
 
     let price = document.createElement("h3");
-    price.innerText = `$${el.prices.current}`;
+    price.innerText = `$${el.current}`;
 
     
     let original_p = document.createElement("h5");
-    original_p.innerText = `Was at $${el.prices.regular}`;
+    original_p.innerText = `Was at $${el.regular.toFixed(2)}`;
     
     let disscount = document.createElement("h6");
-    disscount.innerText = `Save $${(el.prices.regular - el.prices.current).toFixed(0)}`;
+    disscount.innerText = `Save $${(el.regular - el.current).toFixed(0)}`;
     disscount.setAttribute("class", "disscount");
     
     
@@ -132,14 +132,14 @@ let sum_saving = 0;
 let tax = 0;
 
 for (let i = 0; i < data.length; i++) {
-  sum += data[i].prices.regular;
-  sum_saving += (data[i].prices.regular - data[i].prices.current);
-  tax += (data[i].prices.regular * 3.85) / 100;
+  sum += data[i].regular;
+  sum_saving += (data[i].regular - data[i].current);
+  tax += (data[i].regular * 3.85) / 100;
 }
 // console.log(tax);
 
 let O_price = document.getElementsByClassName("O_price");
-O_price.innerText = `$ ${sum}`;
+O_price.innerText = `$ ${sum.toFixed(2)}`;
 document.getElementById("original_price").append(O_price.innerText);
 
 let save = document.getElementsByClassName("save");
@@ -167,3 +167,12 @@ function checkout(){
 localStorage.setItem("cartdata",JSON.stringify(data))
 console.log(data);
 }
+
+let form = document.getElementById("form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  let key = form.search.value;
+  console.log(key);
+  localStorage.setItem("search", JSON.stringify(key));
+  window.location.href = "searchpro.html";
+});

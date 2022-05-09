@@ -28,6 +28,7 @@ body {
 }
 .box1 {
   width: 9vw;
+  height: 10vw;
 }
 .box1 > img {
   width: 100%;
