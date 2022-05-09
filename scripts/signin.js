@@ -12,7 +12,7 @@ var regdUsers = JSON.parse(localStorage.getItem("userdata"));
 // alert("login success");
 //console.log(regdUsers);
 
-let loginFun = () => {
+let loginFun = (e) => {
   e.preventDefault();
 
   let enteredEmail = document.querySelector("#email").value;
@@ -29,11 +29,11 @@ let loginFun = () => {
     ) {
 
       alert("login success");
-      window.location.href = "index.html";
+      window.location.href = "home.html";
       break;
     } else {
       console.log("login failed");
     }
   }
 };
-document.querySelector("form").addEventListener("signin", loginFun);
+document.getElementById("signin").addEventListener("click", loginFun);
