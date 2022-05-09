@@ -1,13 +1,13 @@
-let navbarAccount = ()=>{
+let navbarAccount = () => {
     return ` <div id="nav">
     <img id="logo" src="https://partners.bestbuy.com/image/layout_set_logo?img_id=64271&t=1651667316336" alt="logo">
-    <a href="index.html">Return to previous page</a>
+    <a href="home.html">Return to previous page</a>
    </div>
     `
 }
 
 
-let footers = () =>{
+let footers = () => {
     return `<div id="footer">
     <div><i class="fa-solid fa-pipe"></i><a class="footer"
             href="https://www.bestbuy.com/site/help-topics/terms-and-conditions/pcmcat204400050067.c?id=pcmcat204400050067">Terms
@@ -28,4 +28,7 @@ let footers = () =>{
 </div>`
 }
 
-export {navbarAccount, footers};
+export {
+    navbarAccount,
+    footers
+};

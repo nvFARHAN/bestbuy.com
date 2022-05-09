@@ -35,7 +35,7 @@ form.addEventListener("submit", (event) => {
   let key = form.search.value;
   console.log(key);
   localStorage.setItem("search", JSON.stringify(key));
-window.location.href = 'searchpro.html'
+  window.location.href = "searchpro.html";
 });
 
 let menu = document.querySelectorAll(".menu > li > a");
@@ -78,7 +78,12 @@ let append = (data, container) => {
     btn.innerText = "Add to cart";
     btn.setAttribute("class", "btn btn-primary");
     btn.addEventListener("click", () => {
-      cart.push(e);
+      cart.push({
+        name: e.names.title,
+        image: e.images.standard,
+        regular: e.prices.regular,
+        current: e.prices.current,
+      });
       localStorage.setItem("cart", JSON.stringify(cart));
     });
     box.append(imgbox, p, priceBox, btn);
@@ -109,7 +114,12 @@ let append1 = (data, container) => {
     btn.innerText = "Add to cart";
     btn.setAttribute("class", "btn btn-primary");
     btn.addEventListener("click", () => {
-      cart.push(e);
+      cart.push({
+        name: e.name,
+        image: e.image,
+        regular: e.regularPrice,
+        current: e.salePrice,
+      });
       localStorage.setItem("cart", JSON.stringify(cart));
     });
     box.append(imgbox, p, priceBox, btn);
