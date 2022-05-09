@@ -35,6 +35,19 @@ document.querySelector("form").addEventListener("submit",myfunc);
 
  let data = JSON.parse(localStorage.getItem("cartdata")) || []; 
 
- console.log(data)
+
+
+ let total = document.getElementById("cart-amount")
+ let c_total = 0;
+ let r_total = 0
+
+ for(i = 0; i< data.length; i++){
+    c_total += data[i].current
+    r_total += data[i].regular
+ }
+//  console.log(c_total, r_total)
+ total.innerText = (c_total + ((r_total * 3.85)/100)).toFixed(2)
+//  console.log(data);
+
 
 
