@@ -23,15 +23,15 @@ let navbar = () => {
             </a>
 
             <ul class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Deals</a></li>
-              <li><a class="dropdown-item" href="#">Support & Services</a></li>
-              <li><a class="dropdown-item" href="#">Brands</a></li>
-              <li><a class="dropdown-item" href="#">Featured</a></li>
+              <li><a class="dropdown-item" href="Deal of the Day.html">Deals</a></li>
+              <li><a class="dropdown-item" href="support&service.html">Support & Services</a></li>
+              <li><a class="dropdown-item" href="brands.html">Brands</a></li>
+              <li><a class="dropdown-item" href="featured.html">Featured</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li>
                 <p class="dropdown-header">Shop by Department</p>
               </li>
-              <li><a class="dropdown-item" href="#">Appliances</a></li>
+              <li><a class="dropdown-item" href="appliances.html">Appliances</a></li>
               <li><a class="dropdown-item" href="#">TV & Home Theater</a></li>
               <li><a class="dropdown-item" href="#">Computer & Tablets</a></li>
               <li>
