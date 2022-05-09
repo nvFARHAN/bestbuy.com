@@ -39,15 +39,17 @@ document.getElementById("footer").innerHTML = footer()
 
 const data = JSON.parse(localStorage.getItem("cart")) || [];
 
+console.log(data);
+
 // When got the data from other page correct the id name of local stoage according to that.
 
 let cart_div = document.getElementById("cart_item");
 
-if (data == null) {
+if (data == "") {
   let nothing = document.createElement("div");
 
-  let h4 = document.createElement("h4");
-  h4.innerText = "Your Cart is Empty";
+  let h4 = document.createElement("h1");
+  h4.innerText = "Your Cart is Empty !! ";
 
   nothing.append(h4);
   cart_div.append(nothing);
