@@ -28,7 +28,7 @@ let loginFun = (e) => {
    
     ) {
 
-      alert("login success");
+      alert("login successful");
       window.location.href = "home.html";
       break;
     } else {

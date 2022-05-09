@@ -23,7 +23,7 @@ let signup = () =>{
     };
     console.log(userobj);
     userData.push(userobj);
-    alert("Sign Up success")
+    alert("Sign Up successful")
     window.location.href = "signin.html"
     localStorage.setItem("userdata", JSON.stringify(userData));
      
