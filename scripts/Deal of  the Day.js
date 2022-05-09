@@ -148,3 +148,13 @@ function myFunc(name, image, price) {
   console.log(arr);
   localStorage.setItem("cart", JSON.stringify(arr));
 }
+
+let form = document.getElementById("form");
+// console.log(form);
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  let key = form.search.value;
+  console.log(key);
+  localStorage.setItem("search", JSON.stringify(key));
+  window.location.href = "searchpro.html";
+});

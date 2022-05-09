@@ -96,7 +96,7 @@ let navbar = () => {
     <div class="bg-primary d-flex justify-content-between border-top px-5">
       <div class="d-flex">
         <a class="nav-link text-light" href="">Top Deals</a
-        ><a class="nav-link text-light" href=""> Deal of the Day</a
+        ><a class="nav-link text-light" href="Deal of the Day.html"> Deal of the Day</a
         ><a class="nav-link text-light" href=""> Totaltech Membership</a
         ><a class="nav-link text-light d-none d-xl-block" href="">
           Credit Cards</a
