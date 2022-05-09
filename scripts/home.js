@@ -85,6 +85,8 @@ let append = (data, container) => {
         current: e.prices.current,
       });
       localStorage.setItem("cart", JSON.stringify(cart));
+      // console.log("*");
+      alert("Added to cart successfully");
     });
     box.append(imgbox, p, priceBox, btn);
     container.append(box);
@@ -121,6 +123,7 @@ let append1 = (data, container) => {
         current: e.salePrice,
       });
       localStorage.setItem("cart", JSON.stringify(cart));
+      alert("Added to cart successfully");
     });
     box.append(imgbox, p, priceBox, btn);
     container.append(box);
