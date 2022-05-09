@@ -82,7 +82,7 @@ let navbar = () => {
               type="submit"
               style="border-radius: 0"
             >
-              Search
+            <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
         </div>
